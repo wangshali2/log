@@ -1,4 +1,4 @@
-package day09.init.enumdemo;
+package day18.enum_anno;
 
 /**
  * public enum 枚举类名{

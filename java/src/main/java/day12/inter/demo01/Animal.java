@@ -40,6 +40,7 @@ public class Animal implements Interface01 {
     }
 
 
+    @Override
     public   void sleep()  {
         System.out.println("父类中每只动物都有的方法是默认方法");
     }
