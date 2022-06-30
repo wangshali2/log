@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
+//http://localhost:6001/order/docker
 @RestController
 public class OrderController {
     @Value("${server.port}")
