@@ -15,8 +15,10 @@ import java.util.Arrays;
 public class Ref_con {
     public static void main(String[] args) throws Exception {
 
-        ClassLoader cc = Class.forName("day13.ref.Student").getClassLoader();
-        System.out.println(cc);
+        ClassLoader cc = Class.forName("day14.ref.Student").getClassLoader();
+        ClassLoader classLoader = Ref_con.class.getClassLoader();
+        System.out.println("类加载1：" + cc);
+        System.out.println("类加载2：" + classLoader);
 
         System.out.println(ClassLoader.getSystemClassLoader());
 
@@ -28,10 +30,12 @@ public class Ref_con {
         Class<? extends Class> c2 = stu.getClass();
 
         //3.
-        Class<?> c4 = ClassLoader.getSystemClassLoader().loadClass("day13.ref.Student");
+        Class<?> c4 = ClassLoader.getSystemClassLoader().loadClass("day14.ref.Student");
 
         //4.知道全类名
-        Class<?> clazz = Class.forName("day13.ref.Student");
+        Class<?> clazz = Class.forName("day14.ref.Student");
+        ClassLoader classLoader1 = clazz.getClassLoader();
+        System.out.println("类加载3：" + classLoader1);
 
         System.out.println("=============================================================");
 
@@ -61,7 +65,6 @@ public class Ref_con {
         System.out.println(Arrays.toString(con4));
 
         System.out.println("=====================================================");
-
 
 
     }
