@@ -12,6 +12,7 @@ public class ArrDemo {
         int[] i1;
         double b[];
         String[] s; //引用类型变量数组
+        //
 
         //静态初始化:在定义数组的同时就为数组元素分配空间并赋值
         int[] arr2 = {2, 3, 4};
